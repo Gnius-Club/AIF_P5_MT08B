@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM08B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 8B 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes, en equipo, construyan su mecanismo pateador/lanzador, implementen el GCS de detección, alineación y acción, y prueben y calibren la puntería de su robot para que pueda golpear un objetivo de manera efectiva.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y preparar el entorno.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Refrescar el plan y dar consejos de construcción y calibración.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Construcción física, implementación del plan y pruebas.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Demostración de prototipos y retroalimentación.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un robot Nezha con un mecanismo pateador/lanzador funcional, programado para detectar, alinear y golpear un objetivo, demostrando al menos uno de los planes individuales.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit (con A.I. Lens y servomotor) por equipo de 4 estudiantes.</li>
+                                        <li>Pelotas pequeñas y porterías/objetivos para cada equipo.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits (con A.I. Lens y servomotor) listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Tener un ejemplo de mecanismo de patada simple ya construido para inspirar el ensamblaje. Preparar "campos de juego" para cada equipo con una pelota y una "portería" u objetivo.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión de construcción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, atletas y entrenadores! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase y preparar el entorno de juego para los robots.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización ⏰ 2 minutos</h3>
+                            <p>Anuncia el inicio de la actividad y conecta con los diseños de la sesión anterior.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipos, al taller y a la cancha! Sus diseños están listos, las estrategias claras. Su misión es construir el mecanismo de patada que diseñaron, programar la secuencia completa de puntería con IA y, lo más importante, ¡calibrarlo hasta que funcione! Recuerden que la sesión pasada generaron varios planes individuales. ¡Hoy es el día de darles vida!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Preparación del Entorno y Ejemplo de Mecanismo ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 4) Asegura los "campos de juego" y muestra un ejemplo de mecanismo construido.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para el "Día de Partido", preparen su espacio de trabajo. Cada equipo tendrá un campo de juego con una pelota y una portería u objetivo. Aquí tienen un ejemplo de un mecanismo de patada simple ya construido (muestra tu ejemplo). ¡Esto les puede inspirar para su propio ensamblaje!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: <strong>'Mi equipo construyó un robot atleta y logramos que detectara, se alineara y pateara una pelota usando IA.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Guiar a los alumnos para que refresquen su plan y reciban consejos clave para la construcción y calibración.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recordando la Misión y el Plan ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Anuncia la actividad y guía a los equipos para que recuperen su plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, equipos! Antes de empezar a construir, entremos al <strong>A.I. GYM</strong>. ¿Cuál era la estrategia de su delantero estrella? Vuelvan a describirle su misión a Xolo. Por ejemplo: <strong>'Xolo, nuestro robot gira, ve la pelota roja, se centra y la patea con un servo.'</strong>. Él les devolverá el plan exacto para guiar su programación. ¡La clave hoy es la precisión en la sección de 'alineación' y el 'timing' de la patada!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">POR SIEMPRE:
+    SI (IA_ve_pelota()):
+        fijar variable "posicion_x" a leer_info_pelota_X()
+        
+        SI (variable "posicion_x" < 140): // RANGO DE ALINEACIÓN IZQUIERDA
+            // Girar izquierda
+            nezha_motor_M1_velocidad(-25)
+            nezha_motor_M2_velocidad(25)
+        SINO SI (variable "posicion_x" > 180): // RANGO DE ALINEACIÓN DERECHA
+            // Girar derecha
+            nezha_motor_M1_velocidad(25)
+            nezha_motor_M2_velocidad(-25)
+        SINO:
+            // ¡ALINEADO! SECUENCIA DE PATADA
+            nezha_motor_M1_velocidad(0)
+            nezha_motor_M2_velocidad(0)
+            ESPERAR(200)
+            nezha_servo_S1_angulo(90) // Ángulo de patada
+            ESPERAR(300) // Tiempo de impacto
+            nezha_servo_S1_angulo(0)  // Retraer pierna
+        FIN SI
+    SINO:
+        // No veo la pelota, BUSCAR
+        nezha_motor_M1_velocidad(30)
+        nezha_motor_M2_velocidad(-30)
+    FIN SI</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Consejos de Construcción y Calibración ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Comparte los consejos de Xolo para el montaje y la calibración.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ya tienen su plan fresco. Ahora, presten atención a estos consejos de Xolo. Primero, el <strong>Mecanismo Robusto</strong>: asegúrense de que su pateador esté bien sujeto, ¡una patada genera fuerza! Segundo, <strong>Calibrar la Puntería</strong>: los números de alineación (140 y 180) son solo un punto de partida, ¡tendrán que ajustarlos! Y tercero, <strong>Calibrar la Patada</strong>: el ángulo (90) y el tiempo (300ms) de la patada determinarán su potencia. ¡Muchos números para ajustar!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Fases de construcción, implementación del plan, pruebas sistemáticas y depuración.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Construcción del Mecanismo (Equipo) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Anuncia la actividad e indica a los equipos que comiencen a construir su mecanismo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegó la hora del <strong>Brain Spark</strong>! ¡Manos a la obra, equipos! Reúnanse y comiencen a construir su mecanismo de patada/lanzamiento con el servo y acóplenlo a su robot. ¡Estaré circulando para ayudarles con la parte mecánica, sugiriendo formas de hacer la estructura más fuerte y el movimiento más efectivo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Implementación y Pruebas Iniciales (y Rotación de Planes) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los equipos para que implementen sus planes y realicen las primeras pruebas, rotando entre ellos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Mecanismo construido! Ahora, abran MakeCode. Recuerden que en la sesión pasada generaron varios planes individuales. <strong>Como equipo, elijan UNO de esos planes para empezar.</strong> Implementen el GCS elegido, descarguen el programa y coloquen el robot en el "campo de juego" para observar el primer intento. <strong>Una vez que este primer plan esté funcionando de manera fiable, ¡roten! El siguiente miembro del equipo cargará su plan individual para implementarlo, probarlo y depurarlo. Intenten probar tantos planes como el tiempo lo permita.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Depuración y Calibración Intensa ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Facilita el ciclo de depuración y calibración, enmarcando los errores como oportunidades.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Si el robot no se mueve como esperaban, ¡no se preocupen! Este es el paso más complejo y requerirá mucha depuración. Describan el problema a Xolo. Por ejemplo: <strong>'Xolo, nuestro robot baila alrededor de la pelota pero nunca se centra.'</strong> o <strong>'Se alinea perfecto pero falla la patada.'</strong> Xolo les dará pistas para solucionar problemas de alineación (velocidad de giro, rango central) o de patada (ángulo del servo, tiempo de impacto). ¡Ajusten, prueben y calibren hasta que la puntería sea efectiva!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Demostración de los robots y reflexión sobre el proceso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) Anuncia la actividad final e instruye una reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Excelente trabajo, equipos! Llegamos al <strong>Gnius STORM</strong>. Antes de mostrar sus creaciones, piensen un momento: ¿Qué fue lo más difícil de calibrar: la puntería o la fuerza de la patada?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Demo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Los equipos demuestran la habilidad de su robot atleta.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la demostración! Cada equipo tendrá uno o dos intentos para demostrar la habilidad de su robot atleta frente a la clase. ¿Puede encontrar, alinear y patear la pelota hacia la portería? Después, respondan: <strong>"¿Qué número en su código fue el más importante para lograr que funcionara?"</strong> ¡Celebraremos tanto el éxito como el "fallo heroico", enfocándonos en el proceso!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierra la sesión y conecta con la siguiente unidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Increíble demostración de ingeniería y estrategia! Han construido y programado un sistema robótico complejo que realiza una tarea deportiva. Han aprendido que la precisión en el mundo real requiere muchísima calibración y pruebas. ¡Están listos para desafíos aún mayores!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
